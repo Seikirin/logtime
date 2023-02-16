@@ -1,0 +1,11 @@
+{
+	"manifest_version": 3,
+	"name": "42 Intra Extension",
+	"version": "1.0",
+	"content_scripts": [
+	  {
+		"matches": ["*://*.intra.42.fr/*"],
+		"js": ["script.js"]
+	  }
+	]
+  }
