@@ -40,6 +40,10 @@ function toFormat(time)
 	return `${hours}h${minutes > 9 ? minutes : "0" + minutes}`;
 }
 
+// waitForElm(".user-column.flex.flex-direction-column > div:not(.user-primary)").then((elem) => {
+// 	elem.setAttribute("style", "opacity:0;");
+// })
+
 waitForElm("#user-locations > g").then((first) => {
 	let timeByMonth = {};
 	let elements = document.querySelectorAll("#user-locations > g");
